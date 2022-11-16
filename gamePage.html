@@ -58,6 +58,7 @@
 
 	  let guessCount = 1;
 	  let resetButton;
+	  guessField.focus();
 
 	  function checkGuess() {
   		const userGuess = Number(guessField.value);
@@ -83,7 +84,8 @@
 		  } else if (userGuess > randomNumber) {
 		    lowOrHi.textContent = 'Last guess was too high!';
 		  }
-	  }
+	  	}
+	 }
 
 	  guessCount++;
   	  guessField.value = '';
